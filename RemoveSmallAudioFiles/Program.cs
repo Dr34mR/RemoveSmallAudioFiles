@@ -19,6 +19,9 @@ namespace RemoveSmallAudioFiles
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"\n{_filesRemoved} file/s removed");
+
+            Console.WriteLine($"\nPress any key to exit");
+            Console.ReadKey();
         }
 
         private static void DoLoop(string directoryToScan)
